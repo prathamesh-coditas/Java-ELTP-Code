@@ -1,0 +1,16 @@
+package Feb1Assingment;
+class Test {
+    int display(int x){
+        return x;
+    }
+    double display(int y){
+        return y;
+    }
+public class Q3 {
+    public static void main(String[] args) {
+        Test s = new Test();
+        System.out.println(Value of x   + s.display(5));
+        System.out.println(Value of y   + s.display(6.5));
+    }
+}
+}
