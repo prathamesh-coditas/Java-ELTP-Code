@@ -23,9 +23,3 @@ public class CharArrayWriter {
     }
 }
 
-/**
- *
- *              A
- *              A   A
- *              A   A   A
- */
