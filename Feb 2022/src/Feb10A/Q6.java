@@ -1,20 +1,16 @@
 package Feb10A;
 
 import java.io.*;
+import java.util.Scanner;
 
 class passwdAuth1
 {
-
     public static void main(String args[])
     {
         try
         {
             String logFileName = args[0];
-           // logFileName.toString().replaceAll("\\\\", "/");
-            System.out.println(args[0]);
-           //System.out.println(logFileName);
-            File f = new File(logFileName);
-            System.out.println(f);
+            File  f = new File(logFileName);
             boolean access_granted = false;
             String password = "";
             int integer = 5;
@@ -34,24 +30,21 @@ class passwdAuth1
 
             if (access_granted)
             {
-                //File f = new File("Feb 2022/src/Feb10A/log.txt");
                 System.out.println("Access granted!");
-                PrintWriter out = new PrintWriter(new FileOutputStream(f, true));
+
+                PrintWriter out = new PrintWriter(new
+                        FileOutputStream(f, true));
+                Scanner sc = new Scanner(f);
+                while(sc.hasNextLine()){
+                    System.out.println(sc.nextLine());
+                }
                 out.println();
                 out.print("Updated...");
 
-                FileInputStream fin=new FileInputStream(f);
-
-                if(f.exists()){
-                    System.out.println("Reading operation");
-                    int i=0;
-                    while((i=fin.read())!=-1){
-                        System.out.print((char)i);
-                    }
-                }
                 out.println();
                 out.flush();
                 out.close();
+
             }//end if
 
         }//end try
@@ -60,7 +53,6 @@ class passwdAuth1
             System.out.println("an error has occured.");
             //e.printStackTrace();
         }
-
-
     }//end main
+
 }//end class
