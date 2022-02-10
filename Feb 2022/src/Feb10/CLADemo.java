@@ -6,7 +6,7 @@ public class CLADemo {
         int x = Integer.parseInt(args[4]); //first arguments
         int y = Integer.parseInt(args[1]); //second arguments
         int sum = x + y;
-        System.out.println("The sum of x and y is: " +sum);
+        System.out.println("The sum of x and y is: " + sum);
 
     }
 }
