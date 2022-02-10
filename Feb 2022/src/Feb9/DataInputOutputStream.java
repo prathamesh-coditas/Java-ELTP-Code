@@ -8,11 +8,12 @@ import java.io.FileOutputStream;
 class IOTest{
     public void readFile(){
         try {
-            FileInputStream fis =new FileInputStream("Feb 2022/src/Feb9/Io.txt");
+            FileInputStream fis =new FileInputStream("Feb 2022/src/Feb9/Io1.txt");
             DataInputStream dis = new DataInputStream(fis);
             int i;
             while((i=dis.read())!=-1){
-                System.out.print((char)i);
+                dis.readUTF();
+                //System.out.print((char)i);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -25,7 +26,7 @@ class IOTest{
             FileOutputStream fos = new FileOutputStream("Feb 2022/src/Feb9/Io1.txt");
             DataOutputStream dos = new DataOutputStream(fos);
             byte b[]=str.getBytes();
-            dos.write(b);
+            dos.writeUTF(String.valueOf(b));
             dos.flush();
             dos.close();
             System.out.println("\nwritten successfully.");
