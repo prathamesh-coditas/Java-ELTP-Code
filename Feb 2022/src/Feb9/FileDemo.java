@@ -16,7 +16,6 @@ public class FileDemo {
             System.out.println("File property:read=="+f.canRead());
             System.out.println("file property:write=="+f.canWrite());
             System.out.println("File property:execute=="+f.canExecute());
-
         }
         else
             System.out.println("File Does not exists");

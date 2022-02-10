@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileInputStreamDemo {
     public static void main(String args[]) throws FileNotFoundException, IOException {
-        File f=new File("src/session16/Abcd.txt");
+        File f=new File("Feb 2022/src/Feb9/a1.txt");
 
         FileInputStream fin=new FileInputStream(f);
 
