@@ -29,10 +29,25 @@ public class Q3 {
         System.out.println(t2.getId());
         System.out.println(t3.getName());
         System.out.println(t3.getId());
-        System.out.println("t1 Priority::"+t1.getPriority());
-        System.out.println("t2 Priority::"+t2.getPriority());
-        System.out.println("t3 Priority::"+t3.getPriority());
-
+        System.out.println("t1 Priority::" + t1.getPriority());
+        System.out.println("t2 Priority::" + t2.getPriority());
+        System.out.println("t3 Priority::" + t3.getPriority());
+        //Output:
+        /*
+        Prathamesh1
+        Thread is Running
+        11
+        Prathamesh2
+        12
+        Prathamesh3
+        13
+        t1 Priority::1
+        Thread is Running
+        t2 Priority::10
+        t3 Priority::5
+        Thread is Running
+        These are the methods in Thread CLASS.
+         */
 
 
     }
