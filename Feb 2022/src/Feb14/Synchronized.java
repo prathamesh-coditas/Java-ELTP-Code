@@ -13,31 +13,37 @@ class Account
         System.out.println("Account Current balance is::"+balance);
     }
 
-    synchronized void Withdraw(int amt)//500
+    void Withdraw(int amt)//500
     {
         System.out.println("***************** WITHDRAW ****************");
         System.out.println("Withdrawn amount is::"+amt);
-        if(balance<1000){
-            System.out.println("SORRY!!! Insufficient balance ::"+balance
-                    + "\twaiting for deposit...");
+        synchronized (this){
+            if(balance<1000){
+                System.out.println("SORRY!!! Insufficient balance ::"+balance
+                        + "\twaiting for deposit...");
 
-            try{
-                wait();
-            }catch(Exception e){}
+                try{
+                    wait();
+                }catch(Exception e){}
+            }
+
         }
 
         balance=balance-amt;
         System.out.println("Withdraw Completed...Account Balance::" +balance);//4500
     }
 
-    synchronized void Deposit(int amt)//2000
+    void Deposit(int amt)//2000
     {
         System.out.println("**************** DEPOSIT ******************");
+        synchronized (this){
+            balance=balance+amt;//500+2000=>2500
+            System.out.println("Deposited amount is::"+amt);
+            System.out.println("Deposit Completely...Account Balance::" +balance);
 
-        balance=balance+amt;//500+2000=>2500
-        System.out.println("Deposited amount is::"+amt);
-        System.out.println("Deposit Completely...Account Balance::" +balance);
-        notify();
+            notify();
+        }
+
     }
 }
 
@@ -77,5 +83,3 @@ public class Synchronized {
     }
 
 }
-//assignment1=>synchronized block
-//==>block and method
