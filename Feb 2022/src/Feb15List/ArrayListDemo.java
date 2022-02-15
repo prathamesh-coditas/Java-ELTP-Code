@@ -2,6 +2,7 @@ package Feb15List;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -33,7 +34,7 @@ public class ArrayListDemo {
         System.out.println("****************************************");
         //access way3
         //Using Iterator
-        Iterator<Integer> it = s.iterator();
+        ListIterator<Integer> it = s.listIterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }
@@ -53,6 +54,13 @@ public class ArrayListDemo {
         System.out.println("Adding element at particular index==>"+" 1000");
         s.add(0,1000);
         System.out.println("After adding the element==>"+s.get(0));
+        s.ensureCapacity(10000);
+        System.out.println("*********************************Clone Method******************************************");
+        ArrayList<Integer> clone = (ArrayList<Integer>)s1.clone();
+        ListIterator <Integer>l1= clone.listIterator();
+        while (l1.hasNext()){
+            System.out.println(l1.next());
+        }
 
     }
 }
