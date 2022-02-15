@@ -51,8 +51,8 @@ public class TreeSetDemo {
         System.out.println("After Retain==>"+s);
         System.out.println("*********************************************");
 
-//        LinkHashSet=== Work
-//        1) Null ==> Allow only one null value
+//        Treeset
+//        1) Null ==> cannot contain null values
 //        2) Duplicate==> Not Allowed
 //        3) Order==> Insertion Order
     }
