@@ -36,6 +36,28 @@ public class Q1 {
         for(int i=0;i<q1.size();i++){
             System.out.println(arr[i]);
         }
+        /*
+        First Element  10
+Peek==>10
+Next Element is 10
+Remove Element10
+Next Element is 5
+5
+6
+2
+3
+Head Element is 6
+********************************
+Check the contained in Linked Listtrue
+******************************************************
+6
+2
+3
+23
+26
+56
+
+         */
 
     }
 }

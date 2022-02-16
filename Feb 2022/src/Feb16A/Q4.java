@@ -43,7 +43,35 @@ public class Q4 {
         System.out.println("****************************************************************");
         System.out.println("Floor key Returns the greatest key less than or equal to the given key, or null if there is no such key.:"+nmap.floorKey(5));
         System.out.println("*******************************************************************");
+        System.out.println("Celing key Returns the greatest key higher than or equal to the given key, or null if there is no such key.:"+nmap.ceilingKey(3));
+        System.out.println("*******************************************************************");
         System.out.println("After the descending map : " + nmap.descendingMap());
+
+        /*
+        Mappings of NavigableMap : {2=Nilkanth, 3=Prathamesh, 4=Bhaskar, 5=Chaudhari}
+after remove operation : {2=Nilkanth, 3=Prathamesh, 5=Chaudhari}
+*****************************************************
+Prathamesh
+Chaudhari
+null
+********************************************************
+keyset: [2, 3, 5]
+************************************************************
+Key = 2, Value = Nilkanth
+Key = 3, Value = Prathamesh
+Key = 5, Value = Chaudhari
+******************************************************************
+first entry:2=Nilkanth
+******************************************************************
+last entry:5=Chaudhari
+****************************************************************
+Floor key Returns the greatest key less than or equal to the given key, or null if there is no such key.:5
+*******************************************************************
+Celing key Returns the greatest key higher than or equal to the given key, or null if there is no such key.:3
+*******************************************************************
+After the descending map : {5=Chaudhari, 3=Prathamesh, 2=Nilkanth}
+
+         */
     }
 
 }

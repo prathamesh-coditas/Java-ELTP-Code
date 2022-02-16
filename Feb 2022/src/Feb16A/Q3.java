@@ -83,7 +83,31 @@
             for (int i = 0; i < list1.size(); i++) {
                 System.out.println(list1.get(i));
             }
+/*
+**********************For Case one whose  salary is greater than 15000****************************
+Employee{id=1006, name='K', Salary=45000.0}
+Employee{id=1001, name='B', Salary=120000.0}
+************************  For Case Two sorted by there names   ***********************************
+Employee{id=1003, name='A', Salary=3500.0}
+Employee{id=1001, name='B', Salary=120000.0}
+Employee{id=1004, name='H', Salary=4000.0}
+Employee{id=1006, name='K', Salary=45000.0}
+Employee{id=1005, name='P', Salary=3000.0}
+Employee{id=1002, name='S', Salary=2500.0}
+*****************************BY USING COMPARABLE For Case one whose  salary is greater than 15000********************************************
+Employee{id=1001, name='B', Salary=120000.0}
+Employee{id=1006, name='K', Salary=45000.0}
+*****************************BY Using COMPARABLE For Case Two sorted by there names********************************************************
+Employee{id=1003, name='A', Salary=3500.0}
+Employee{id=1001, name='B', Salary=120000.0}
+Employee{id=1004, name='H', Salary=4000.0}
+Employee{id=1006, name='K', Salary=45000.0}
+Employee{id=1005, name='P', Salary=3000.0}
+Employee{id=1002, name='S', Salary=2500.0}
 
+Process finished with exit code 0
+
+ */
 
         }
     }

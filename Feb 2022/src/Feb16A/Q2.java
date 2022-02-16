@@ -15,9 +15,9 @@ public class Q2 {
         de.push(26);
 
         System.out.println(de);
-        System.out.println("adq is empty : "+de.isEmpty());
-        System.out.println("size of adq is : "+de.size());
-        System.out.println("does adq contain 45 : "+de.contains(45));
+        System.out.println("dq is empty : "+de.isEmpty());
+        System.out.println("size of dq is : "+de.size());
+        System.out.println("does dq contain 45 : "+de.contains(45));
 
         System.out.println("peek element is "+de.peek());
         System.out.println("peek first element is "+de.peekFirst());
@@ -40,7 +40,27 @@ public class Q2 {
         de.removeFirstOccurrence(26);
         System.out.println(de);
     }
-
+/*
+[26, 76, 12, 23, 45, 26, 56, 21]
+dq is empty : false
+size of dq is : 8
+does dq contain 45 : true
+peek element is 26
+peek first element is 26
+peek last element is 21
+26
+Poll() [76, 12, 23, 45, 26, 56, 21]
+76
+pollFirst() [12, 23, 45, 26, 56, 21]
+21
+pollLast() [12, 23, 45, 26, 56]
+[12, 23, 45, 26, 56]
+12
+12
+56
+12
+[23, 45, 56]
+ */
 }
 
 
