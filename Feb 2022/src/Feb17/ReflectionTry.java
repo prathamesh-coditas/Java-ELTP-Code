@@ -59,5 +59,33 @@ public class ReflectionTry
         Method mcall3 = cls.getDeclaredMethod("displayName2");
         mcall3.setAccessible(true);
         mcall3.invoke(obj);
+        /*
+        *****************Name of the class**************************
+Class name is::Feb17.Test
+Class canonical name is::Feb17.Test
+Class simple name is::Test
+Class Type name is::Feb17.Test
+*******************Name of Constructor***************
+The name of constructor is Feb17.Test
+*******************Name of Methods*******************
+The public methods of class are :
+displayName
+displayName1
+wait
+wait
+wait
+equals
+toString
+hashCode
+getClass
+notify
+notifyAll
+The number is 12
+The string is Chaudhari
+Hi Private method..!
+
+Process finished with exit code 0
+
+         */
     }
 }

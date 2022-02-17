@@ -117,6 +117,113 @@ public class ReflectionDemo {
         int modifier3=field1.getModifiers();
         String mod3= Modifier.toString(modifier3);
         System.out.println("Modifier od Field is::"+mod3);
+    /*
+    efault
+Default circle
+Default
+Parameterise constructor::2
+I am show Circle
+*****************Name of the class**************************
+Class name is::Feb17.Circle
+Class name is::Feb17.Circle
+Class name is::Circle
+Class name is::Feb17.Circle
+*****************Modifier of the class****************************
+Modifier of Circle is::0
+********************
+Modifier od RelfectionDemo is::public
+********************
+Superclass of Circle is::class Feb17.Shape
+********************
+Constructor name is::Feb17.Circle
+Modifier od RelfectionDemo is::public
+Parameters are ::0
 
+Constructor name is::Feb17.Circle
+Modifier od RelfectionDemo is::public
+Parameters are ::1
+
+Method name is::show
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::area
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::1
+
+Method name is::wait
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::wait
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::2
+
+Method name is::wait
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::1
+
+Method name is::equals
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::1
+
+Method name is::toString
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::hashCode
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::getClass
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::notify
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+Method name is::notifyAll
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
+
+********************
+Value of radius is::4
+Modifier od Field is::public
+
+     */
     }
 }
