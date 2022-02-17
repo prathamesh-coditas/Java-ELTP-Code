@@ -105,20 +105,16 @@ public class ReflectionDemo {
             System.out.println(" ");
         }
         System.out.println("********************");
-        Field field1=obj.getField("radius");
-        //field1.setAccessible(true);//for private
-        field1.set(c,4);
-
-        //getter
-        int typeValue = (int) field1.get(c);
-        System.out.println("Value of radius is::"+typeValue);
-
-        //modifier
-        int modifier3=field1.getModifiers();
-        String mod3= Modifier.toString(modifier3);
-        System.out.println("Modifier od Field is::"+mod3);
+        Field[] field1=obj.getDeclaredFields();
+        for(Field f1 : field1) {
+            f1.setAccessible(true);
+            System.out.println("Name of the Field is :"+ f1.getName());
+            int modifier3=f1.getModifiers();
+            String mod3= Modifier.toString(modifier3);
+            System.out.println("Modifier of the Field is::"+mod3);
+        }
     /*
-    efault
+  Default
 Default circle
 Default
 Parameterise constructor::2
@@ -143,19 +139,19 @@ Constructor name is::Feb17.Circle
 Modifier od RelfectionDemo is::public
 Parameters are ::1
 
-Method name is::show
-********Declared Method***********
-Result is::12.566371
-********Declared Method end***********
-Modifier of RelfectionDemo is::public
-Parameters are ::0
-
 Method name is::area
 ********Declared Method***********
 Result is::12.566371
 ********Declared Method end***********
 Modifier of RelfectionDemo is::public
 Parameters are ::1
+
+Method name is::show
+********Declared Method***********
+Result is::12.566371
+********Declared Method end***********
+Modifier of RelfectionDemo is::public
+Parameters are ::0
 
 Method name is::wait
 ********Declared Method***********
@@ -221,9 +217,10 @@ Modifier of RelfectionDemo is::public
 Parameters are ::0
 
 ********************
-Value of radius is::4
-Modifier od Field is::public
+Name of the Field is :radius
+Modifier of the Field is::public
 
-     */
+Process finished with exit code 0
+ */
     }
 }
