@@ -1,26 +1,32 @@
 package Feb18;
 
 enum Signal {
-    RED,GREEN,YELLOW
+    RED("STOP"),GREEN("GO"),YELLOW("DRIVE VERY SLOW");
+    private String action;
+    public String getAction()
+    {
+        return this.action;
+    }
+
+    private Signal(String action)
+    {
+        this.action = action;
+    }
 }
 
 public class Q2 {
     public static void main(String[] args) {
         Signal[] s1 = Signal.values();
-        for (Signal color:s1) {
-
-            switch (color) {
-                case RED:
-                    System.out.println("RED MEANS STOP");
-                    break;
-                case YELLOW:
-                    System.out.println("YELLOW MEANS DRIVE VERY SLOW");
-                    break;
-                case GREEN:
-                    System.out.println("GREEN MEANS GO");
-                    break;
-
-            }
+        for (Signal signal : s1)
+        {
+            System.out.println("name : " + signal.name() +
+                    " means " + signal.getAction() );
         }
+        /*
+        name : RED means: STOP
+name : GREEN means: GO
+name : YELLOW means: DRIVE VERY SLOW
+
+         */
     }
 }
