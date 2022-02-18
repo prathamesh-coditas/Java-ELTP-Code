@@ -14,10 +14,10 @@ public class Q2 {
                     System.out.println("RED MEANS STOP");
                     break;
                 case YELLOW:
-                    System.out.println("GREEN MEANS GO");
+                    System.out.println("YELLOW MEANS DRIVE VERY SLOW");
                     break;
                 case GREEN:
-                    System.out.println("YELLOW MEANS DRIVE VERY SLOW");
+                    System.out.println("GREEN MEANS GO");
                     break;
 
             }

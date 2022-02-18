@@ -20,7 +20,7 @@ class Addition  {
         return a+b+c+d;
     }
 }
-public class Add {
+public class Q1 {
     public static void main(String[] args) {
         Varargs_Addition obj= new Varargs_Addition();
         System.out.println("Using Varargs");
