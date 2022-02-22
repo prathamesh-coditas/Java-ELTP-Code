@@ -36,17 +36,17 @@ public class Q1 {
         System.out.println(obj1.add(1, 2));
         System.out.println(obj1.add(1, 2, 3));
         System.out.println(obj1.add(1, 2, 3, 4));
-/*
-Using Varargs
-Addition is ==>36
-Addition is ==>42
-Addition is ==>63
-**************************************************
-3
-6
-10
+        /*
+        Using Varargs
+        Addition is ==>36
+        Addition is ==>42
+        Addition is ==>63
+        **************************************************
+        3
+        6
+        10
 
- */
+         */
     }
 
 }

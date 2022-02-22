@@ -1,5 +1,7 @@
 package Feb18;
 
+import java.util.PriorityQueue;
+
 enum Signal {
     RED("STOP"),GREEN("GO"),YELLOW("DRIVE VERY SLOW");
     private String action;
@@ -16,6 +18,16 @@ enum Signal {
 
 public class Q2 {
     public static void main(String[] args) {
+
+        PriorityQueue q1= new PriorityQueue();
+        q1.add(10);
+        q1.add(15);
+        q1.add(20);
+        q1.add(5);
+        q1.poll();
+        q1.peek();
+        q1.clear();
+        System.out.println(q1);
         Signal[] s1 = Signal.values();
         for (Signal signal : s1)
         {
@@ -23,9 +35,9 @@ public class Q2 {
                     " means " + signal.getAction() );
         }
         /*
-        name : RED means: STOP
-name : GREEN means: GO
-name : YELLOW means: DRIVE VERY SLOW
+         name : RED means: STOP
+        name : GREEN means: GO
+        name : YELLOW means: DRIVE VERY SLOW
 
          */
     }
